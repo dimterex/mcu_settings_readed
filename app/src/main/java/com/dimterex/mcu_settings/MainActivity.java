@@ -47,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
 
                 String parameter  = mCarManager.getParameters(input);
                 if (parameter == null)
-                    parameter = " failed to read";
+                    parameter = input + " failed to read";
 
-                listItems.add(input + parameter);
+                listItems.add(parameter);
                 adapter.notifyDataSetChanged();
                 output_list.setSelection(listItems.size() - 1);
             }
